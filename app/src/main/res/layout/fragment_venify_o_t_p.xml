@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".authentication.VenifyOTP"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical"
+       >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_verification_text"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/muli_black"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_description_text"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/muli"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+        <com.chaos.view.PinView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:itemCount="6"
+            app:itemWidth="40dp"
+            app:itemHeight="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:lineColor="@color/black"
+            android:itemBackground="@color/white"
+            style="@style/PinWidget.PinView"
+            android:inputType="number"
+            app:cursorColor="@color/black"
+            app:itemRadius="5dp"
+            tools:ignore="MissingClass">
+        </com.chaos.view.PinView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:backgroundTint="@color/colorPrimary"
+            android:text="Verify Code"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -21,7 +21,7 @@ class ThirdScreen : Fragment() {
 
         binding.finish.setOnClickListener {
 
-            findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_viewPagerFragment_to_loginFragment2)
             onBoardingFinshed()
         }
 

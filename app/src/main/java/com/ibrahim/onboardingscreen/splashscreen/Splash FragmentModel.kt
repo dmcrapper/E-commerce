@@ -1,12 +1,11 @@
 package com.ibrahim.onboardingscreen.splashscreen
 
-import android.os.Handler
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
+
 
 
 class splashModel : ViewModel() {

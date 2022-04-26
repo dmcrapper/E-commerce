@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".authentication.LoginFragment"
+    android:background="@color/colorPrimary"
+    android:padding="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/muli_black"
+            android:text="login"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="40sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_phone_Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PhoneNumber"
+                app:startIconDrawable="@drawable/phone_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:boxStrokeColor="@color/black"
+                tools:ignore="NotSibling" >
+        <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"/>
+          </com.google.android.material.textfield.TextInputLayout>
+         <com.google.android.material.textfield.TextInputLayout
+                android:textColorHint="@color/black"
+                android:id="@+id/Login_password"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Password"
+                app:startIconDrawable="@drawable/lock"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                android:layout_below="@id/login_phone_Number"
+                app:startIconTint="@color/black"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/muli3"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"/>
+         </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout
+                android:id="@+id/forget_password_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Login_password">
+            </RelativeLayout>
+
+        <Button
+                android:id="@+id/LetTheUserLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forget_password_block"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        <Button
+                android:id="@+id/loginretailer"
+                android:layout_below="@+id/LetTheUserLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CreateAccount"
+                android:background="#00000000"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
