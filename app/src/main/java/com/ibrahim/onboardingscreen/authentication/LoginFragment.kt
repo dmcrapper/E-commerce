@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+
 
 import com.ibrahim.onboardingscreen.R
 import com.ibrahim.onboardingscreen.databinding.FragmentLoginBinding
-import com.ibrahim.onboardingscreen.databinding.FragmentSecondBinding
+
 
 class LoginFragment : Fragment() {
     lateinit var  binding : FragmentLoginBinding
@@ -21,14 +20,12 @@ class LoginFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentLoginBinding.inflate(inflater,container,false)
-        binding.LetTheUserLogIn.setOnClickListener {
-          findNavController().navigate(R.id.action_loginFragment2_to_signUpFragment)
-        }
 
+        binding.loginretailer.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment2_to_signUpFragment)
+        }
 
         return binding.root
     }
-
-
 
 }

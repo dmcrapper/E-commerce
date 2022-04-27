@@ -1,6 +1,8 @@
 package com.ibrahim.onboardingscreen.splashscreen
 
 
+import android.os.Handler
+import android.os.Looper
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -16,10 +18,11 @@ class splashModel : ViewModel() {
 
 
     init {
-        GlobalScope.launch {
-            delay(3000)
-            mutableLiveData.postValue(SplashState.MainAcivity())
-        }
+        Handler(Looper.getMainLooper()).postDelayed({
+
+        mutableLiveData.postValue(SplashState.MainAcivity())
+        }, 3000)
+
     }
 
 }

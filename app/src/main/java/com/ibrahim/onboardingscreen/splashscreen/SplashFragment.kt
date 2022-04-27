@@ -2,18 +2,14 @@ package com.ibrahim.onboardingscreen.splashscreen
 
 import android.content.Context
 import android.os.Bundle
-
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-
 import androidx.navigation.fragment.findNavController
 import com.ibrahim.onboardingscreen.R
-import com.ibrahim.onboardingscreen.databinding.FragmentLoginBinding
 import com.ibrahim.onboardingscreen.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment() {
@@ -35,7 +31,6 @@ class SplashFragment : Fragment() {
                         findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
 
                     }
-
                 }
             }
         })
@@ -45,10 +40,8 @@ class SplashFragment : Fragment() {
         return binding.root
     }
 
-
     private fun onBoardingFinshed() :Boolean{
         val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("Finished",false)
     }
-
 }

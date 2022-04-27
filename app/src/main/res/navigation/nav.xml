@@ -20,11 +20,6 @@
             app:destination="@id/loginFragment2"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
-        <action
-            android:id="@+id/action_splashFragment_to_signUpFragment2"
-            app:destination="@id/signUpFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
@@ -55,10 +50,9 @@
         android:id="@+id/signUpFragment"
         android:name="com.ibrahim.onboardingscreen.authentication.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.ibrahim.onboardingscreen.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_venifyOTP2"
+            app:destination="@id/venifyOTP2" />
+    </fragment>
 </navigation>
