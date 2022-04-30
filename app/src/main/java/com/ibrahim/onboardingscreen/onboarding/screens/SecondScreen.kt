@@ -19,14 +19,14 @@ lateinit var  binding :FragmentSecondBinding
         binding = FragmentSecondBinding.inflate(inflater,container,false)
 
 
-        fun bv(){
-            binding.next2.setOnClickListener {
+       // fun bv(){
+           binding.next2.setOnClickListener {
                 binding.root.rootView.findViewById<ViewPager2>(R.id.viewPager).currentItem =2
 
             }
-        }
+      //  }
 
-        bv()
+        //bv()
         return binding.root
     }
 }

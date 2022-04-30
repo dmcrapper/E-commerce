@@ -4,7 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".splashscreen.SplashFragment"
-    android:background="@drawable/dp">
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
 
+        android:background="@drawable/splash"
+        android:layout_gravity="center"/>
 
 </FrameLayout>
